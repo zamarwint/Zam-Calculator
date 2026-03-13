@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZAM CALCULATOR</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="cal.png" type="image/x-icon" />
+    <script src="script.js" async defer></script>
+  </head>
+  <body>
+    <h1 class="title">WELCOME TO ZAMAR'S CALCUALTOR!</h1>
+    <h3 class="heading">
+      This is a free calculator you can use to do your homework.
+    </h3>
+    <div class="calculator">
+      <input type="text" id="screen" disabled />
+
+      <button class="number number1" onclick="addNumbers(1)">1</button>
+      <button class="number number2" onclick="addNumbers(2)">2</button>
+      <button class="number number3" onclick="addNumbers(3)">3</button>
+      <button class="operand plus-button" onclick="addOperands('+')">+</button>
+
+      <button class="number number4" onclick="addNumbers(4)">4</button>
+      <button class="number number5" onclick="addNumbers(5)">5</button>
+      <button class="number number6" onclick="addNumbers(6)">6</button>
+      <button class="operand minus-button" onclick="addOperands('-')">-</button>
+
+      <button class="number number7" onclick="addNumbers(7)">7</button>
+      <button class="number number8" onclick="addNumbers(8)">8</button>
+      <button class="number number9" onclick="addNumbers(9)">9</button>
+      <button class="operand multiply-button" onclick="addOperands('*')">
+        *
+      </button>
+
+      <button class="clear clear-button" onclick="clearScreen()">clear</button>
+      <button class="equal calculate-button" onclick="calculate()">=</button>
+      <button class="operand divide-button" onclick="addOperands('/')">
+        /
+      </button>
+      <button class="delete del-button" onclick="deleteValue()">del</button>
+
+      <button class="operand exponent-button" onclick="addOperands('**')">
+        **
+      </button>
+      <button class="operand modulus-button" onclick="addOperands('%')">
+        %
+      </button>
+      <button class="dot dot-button" onclick="addNumbers('.')">.</button>
+    </div>
+  </body>
+</html>

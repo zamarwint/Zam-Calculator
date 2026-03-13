@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Unbounded:wght@200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+}
+
+title, script {
+    display: none;
+}
+
+.title {
+    margin-top: 1.5em;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.heading {
+    color: white;
+    font-size: 1em;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.calculator {
+    display: grid;
+    width: 50vw;
+    height: 70vh;
+    grid-template: 8em 5em 5em 5em 5em 5em / repeat(4, 10em);
+    place-content: center;
+    place-items: center;
+
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 5px solid rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 2.5em;
+    font-size: 1em;
+}
+
+.number, .operand, .delete, .clear, .equal, .dot {
+    width: 4em;
+    height: 2em;
+    background-color: white;
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+    font-size: 2.5em;
+    transition: transform 0.1s ease;
+}
+
+.number:hover, .operand:hover, .delete:hover, .clear:hover, .equal:hover, .dot:hover {
+    background-color: lightgoldenrodyellow;
+    transform: scale(1.1);
+}
+
+#screen {
+    grid-column: 1 / span 4;
+    width: 6em;
+    height: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.25);
+    color: white;
+    border-radius: 10px;
+    font-size: 5em;
+}
+
+@media (max-width: 1024px) {
+    .calculator {
+        font-size: 0.5em;
+        grid-template: auto 40%;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (min-height: 1200px) {
+    .calculator {
+        font-size: 0.5em;
+        grid-template: auto 40%;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        font-size: 0.5em;
+        grid-template: auto 20%;
+        width: auto;
+        height: auto;
+    }
+}
