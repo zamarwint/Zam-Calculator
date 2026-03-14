@@ -6,6 +6,10 @@ Structured in HTML, beautifully designed in CSS, and the mathematical functions 
 
 ## Try it Yourself!
 
+Visit [the website.](https://zam-calculator.netlify.app/)
+
+**OR**
+
 Download this calculator website from Github or from my Portfolio website.
 
 - If you're using Github, click on the "Code" button, then in the dropdown click "Download ZIP".
